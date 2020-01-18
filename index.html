@@ -66,8 +66,9 @@
                 <br><br/>
                 <figcaption>
                 <p style="text-align:justify;">
-                <b>Music-to-visual Style Transfer.</b>  Illustration of the our goal: let music change the style of the image.
-                For example, a spectrogram of Baroque music <i>Ricercar pro Festis Natalytis</i> transfer the content image into a Baroque-style color scheme through a neural network linking the semantic space shared by music and image.
+                <b>Music-to-visual Style Transfer.</b>  Illustration of the our goal: Let music change the visual style of an image. 
+                For example, a spectrogram of Claude Debussy's music <i>Sarabande</i> in <i>Pour le piano, L. 95</i> (1901) transfers Alfred Jacob Miller's painting 
+                <i>Lake Her Lone Bosom Expands to the Sky</i> (1850) into an Impressionism-like color scheme through a neural network linking the semantic space shared by music and image.
                 </p>
                 </figcaption>
             </div>
@@ -78,17 +79,15 @@
 <div class="container" id="abstract">
     <h2>Abstract</h2>
     <p style="text-align:justify;">
-        Music-to-visual style transfer is a challenging yet important cross-modal learning problem in the practice of creativity. 
-        Its major difference from the traditional image style transfer problem is that the style information is provided by music rather than image. 
-        Assuming that musical features can be properly mapped to visual contents through semantic links between the two domains, 
-        we solve the music-to-visual style transfer problem in two steps: music visualization and style transfer. 
-        The music visualization network utilizes an encoder-generator architecture with a conditional generative adversarial network to generate image-based music representations from music data. 
-        This network is integrated with an image style transfer method to accomplish the style transfer process. Experiments are conducted on WikiArt-IMSLP, 
-        a newly compiled dataset including Western music recordings and paintings listed by decades. 
-        By utilizing the era label to learn the semantic connection between paintings and music, 
-        we demonstrate that the proposed framework can generate diverse image style representations from a music piece, 
-        and these representations can unveil certain art forms of the same era. 
-        Subjective testing results also emphasize the role of the era label in improving the perceptual quality on the compatibility between music and visual content.
+        Cross-modal style transfer is a crucial yet challenging step in artificial intelligence. 
+        In this paper, we investigate music-to-visual style transfer, 
+        a cross-modal style transfer task that has practical application on making the visual style of a video be in harmony with its background music. 
+        To accomplishing this task, a music visualization network based on Generative Adversarial Networks (GAN) is proposed to learn the semantic label space shared by both music and vision data. 
+        The network is trained with a newly compiled dataset of Western classical music recordings and art paintings, 
+        where the era of the works is taken as the shared labels. 
+        Image or video style transfer is then performed with the diverse representations learned from music. 
+        Experiments show that the learned representations unveil certain visual art forms conditioned on the music of the same era. 
+        A user study is also conducted to assess the aesthetic quality of the transferred results.
     </p>
 </div>
 
